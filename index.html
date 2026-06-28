@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AuraCraft Creations | Handmade With Love</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,37 +19,42 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#faf7f2;
-color:#222;
+background:#fffaf7;
+color:#333;
 }
 
 header{
 position:fixed;
 top:0;
+left:0;
 width:100%;
-background:#fff;
 padding:20px 8%;
+background:#fff;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 z-index:1000;
 }
 
 .logo{
-font-size:32px;
+font-size:30px;
 font-weight:700;
 }
 
 .logo span{
-color:#d4af37;
+color:#c89b3c;
 }
 
 nav a{
+margin-left:25px;
 text-decoration:none;
-margin-left:30px;
 color:#333;
 font-weight:500;
+}
+
+nav a:hover{
+color:#c89b3c;
 }
 
 .hero{
@@ -58,47 +64,51 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+color:#fff;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 url('https://images.unsplash.com/photo-1512436991641-6745cdb1723?w=1600') center/cover;
-color:white;
 }
 
 .hero h1{
-font-size:70px;
+font-size:65px;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:22px;
-max-width:850px;
+font-size:20px;
+max-width:800px;
 margin:auto;
 line-height:1.8;
 }
 
 .btn{
 display:inline-block;
-margin-top:35px;
-padding:18px 45px;
-background:#d4af37;
+margin-top:30px;
+padding:15px 35px;
+background:#c89b3c;
 color:#fff;
 text-decoration:none;
 border-radius:50px;
-font-size:20px;
+}
+
+.btn:hover{
+background:#111;
 }
 
 section{
-padding:100px 8%;
+padding:90px 8%;
 }
 
 .title{
 text-align:center;
-font-size:48px;
+font-size:40px;
 margin-bottom:50px;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
@@ -106,49 +116,35 @@ gap:30px;
 background:#fff;
 border-radius:20px;
 overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .card img{
 width:100%;
-height:300px;
+height:280px;
 object-fit:cover;
 }
 
 .card h3{
-padding:20px;
+padding:20px 20px 10px;
 }
 
 .card p{
-padding:0 20px 25px;
+padding:0 20px 20px;
 color:#666;
 }
 
 .about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:20px;
-}
-
-.about h2{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.about p{
+max-width:900px;
+margin:auto;
+text-align:center;
 line-height:2;
-color:#555;
+font-size:18px;
 }
 
 .features{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
 }
 
@@ -157,19 +153,36 @@ background:#fff;
 padding:35px;
 border-radius:20px;
 text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-.contact{
-text-align:center;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact-box{
 background:#fff;
+padding:40px;
 border-radius:20px;
-padding:50px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+max-width:700px;
+margin:auto;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-.contact h3{
-margin:20px 0;
+.contact-box p{
+margin:15px 0;
+font-size:18px;
 }
 
 footer{
@@ -177,6 +190,23 @@ background:#111;
 color:#fff;
 text-align:center;
 padding:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:#fff;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 @media(max-width:768px){
@@ -190,31 +220,33 @@ margin-top:15px;
 }
 
 .hero h1{
-font-size:45px;
-}
-
-.about{
-grid-template-columns:1fr;
+font-size:42px;
 }
 
 }
 
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">AURA<span>CRAFT</span></div>
+
+<div class="logo">
+AURA<span>CRAFT</span>
+</div>
 
 <nav>
-<a href="#">Home</a>
+<a href="#home">Home</a>
 <a href="#products">Products</a>
 <a href="#about">About</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div>
 
@@ -222,8 +254,8 @@ grid-template-columns:1fr;
 
 <p>
 Discover custom-designed printed T-shirts, handmade candles,
-resin art creations and personalized gifts crafted with care.
-Every product is uniquely designed to make your moments special.
+resin art creations and personalized gifts crafted with care
+and designed to stand out.
 </p>
 
 <a class="btn"
@@ -245,19 +277,19 @@ Shop On Meesho
 <div class="card">
 <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900">
 <h3>Custom Printed T-Shirts</h3>
-<p>Creative, personalized and stylish custom printed apparel.</p>
+<p>Unique and personalized designs for every style.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=900">
 <h3>Handmade Candles</h3>
-<p>Beautiful handcrafted candles made with love and creativity.</p>
+<p>Beautiful handcrafted candles made with creativity.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=900">
-<h3>Resin Art</h3>
-<p>Unique resin artwork perfect for gifts and home décor.</p>
+<h3>Resin Art Creations</h3>
+<p>Elegant resin artwork perfect for gifts and décor.</p>
 </div>
 
 </div>
@@ -266,23 +298,16 @@ Shop On Meesho
 
 <section id="about">
 
+<h2 class="title">About Us</h2>
+
 <div class="about">
 
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900">
+AuraCraft Creations specializes in handmade products including
+custom T-shirts, candles and unique resin art pieces.
 
-<div>
+Every creation is handmade with love, crafted with care and designed to stand out.
 
-<h2>About AuraCraft Creations</h2>
-
-<p>
-AuraCraft Creations is a handmade brand dedicated to creating unique products with passion and creativity.
-
-We specialize in custom T-shirts, candles, resin art, personalized gifts and handcrafted decorative products.
-
-Every product is handmade with love, crafted with care and designed to stand out.
-</p>
-
-</div>
+Our mission is to provide premium handmade products at pocket-friendly prices while delivering something truly special to every customer.
 
 </div>
 
@@ -295,24 +320,43 @@ Every product is handmade with love, crafted with care and designed to stand out
 <div class="features">
 
 <div class="feature">
-<h3>Handmade Products</h3>
-<p>Every item is made with care and attention.</p>
+<h3>Handmade With Love</h3>
+<p>Every item is crafted with passion and care.</p>
 </div>
 
 <div class="feature">
 <h3>Unique Designs</h3>
-<p>Creative products designed specially for you.</p>
+<p>Creative and personalized products.</p>
 </div>
 
 <div class="feature">
-<h3>Affordable Prices</h3>
-<p>Premium handmade products at pocket-friendly prices.</p>
+<h3>Affordable Pricing</h3>
+<p>Premium quality at budget-friendly prices.</p>
 </div>
 
 <div class="feature">
-<h3>Trusted Store</h3>
-<p>Shop securely through our official Meesho store.</p>
+<h3>Trusted Shopping</h3>
+<p>Secure shopping through our Meesho store.</p>
 </div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Product Gallery</h2>
+
+<div class="gallery">
+
+<!-- Replace these with your uploaded images -->
+
+<img src="images/product1.jpeg">
+<img src="images/product2.jpeg">
+<img src="images/product3.jpeg">
+<img src="images/product4.jpeg">
+<img src="images/product5.jpeg">
+<img src="images/product6.jpeg">
 
 </div>
 
@@ -320,18 +364,18 @@ Every product is handmade with love, crafted with care and designed to stand out
 
 <section id="contact">
 
-<div class="contact">
-
 <h2 class="title">Contact Us</h2>
 
-<h3>📞 Phone: 8334841488</h3>
+<div class="contact-box">
 
-<h3>🛒 Meesho Store</h3>
+<p>📞 +91 8334841488</p>
+
+<p>📧 ownherworld@gmail.com</p>
 
 <a class="btn"
 href="https://www.meesho.com/AuraCraftCreations?ms=2"
 target="_blank">
-Visit Store
+Visit Our Meesho Store
 </a>
 
 </div>
@@ -349,6 +393,12 @@ Visit Store
 <p>© 2026 AuraCraft Creations. All Rights Reserved.</p>
 
 </footer>
+
+<a class="whatsapp"
+href="https://wa.me/918334841488"
+target="_blank">
+💬
+</a>
 
 </body>
 </html>
