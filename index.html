@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>AuraCraft Creations | Handmade With Love</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,26 +18,25 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#fff8f5;
-color:#333;
+background:#faf7f2;
+color:#222;
 }
 
 header{
 position:fixed;
 top:0;
-left:0;
 width:100%;
-padding:20px 8%;
 background:#fff;
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 z-index:1000;
 }
 
 .logo{
-font-size:30px;
+font-size:32px;
 font-weight:700;
 }
 
@@ -48,14 +46,9 @@ color:#d4af37;
 
 nav a{
 text-decoration:none;
-margin-left:25px;
+margin-left:30px;
 color:#333;
 font-weight:500;
-transition:.3s;
-}
-
-nav a:hover{
-color:#d4af37;
 }
 
 .hero{
@@ -65,141 +58,125 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-color:white;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 url('https://images.unsplash.com/photo-1512436991641-6745cdb1723?w=1600') center/cover;
+color:white;
 }
 
 .hero h1{
-font-size:60px;
+font-size:70px;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-max-width:700px;
+font-size:22px;
+max-width:850px;
 margin:auto;
-margin-bottom:35px;
+line-height:1.8;
 }
 
 .btn{
 display:inline-block;
-padding:15px 35px;
+margin-top:35px;
+padding:18px 45px;
 background:#d4af37;
-color:white;
+color:#fff;
 text-decoration:none;
 border-radius:50px;
-transition:.3s;
-}
-
-.btn:hover{
-background:#111;
+font-size:20px;
 }
 
 section{
-padding:90px 8%;
+padding:100px 8%;
 }
 
 .title{
 text-align:center;
-font-size:40px;
+font-size:48px;
 margin-bottom:50px;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
 }
 
 .card{
-background:white;
+background:#fff;
 border-radius:20px;
 overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .card img{
 width:100%;
-height:320px;
+height:300px;
 object-fit:cover;
 }
 
 .card h3{
-padding:15px;
+padding:20px;
 }
 
 .card p{
-padding:0 15px 20px;
+padding:0 20px 25px;
 color:#666;
 }
 
 .about{
-max-width:900px;
-margin:auto;
-text-align:center;
-line-height:1.9;
-font-size:18px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.about p{
+line-height:2;
+color:#555;
 }
 
 .features{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .feature{
-background:white;
+background:#fff;
 padding:35px;
 border-radius:20px;
 text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.contact-box{
-background:white;
-padding:40px;
-border-radius:20px;
-max-width:700px;
-margin:auto;
+.contact{
 text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+background:#fff;
+border-radius:20px;
+padding:50px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.contact-box p{
-margin:15px 0;
-font-size:18px;
+.contact h3{
+margin:20px 0;
 }
 
 footer{
 background:#111;
-color:white;
+color:#fff;
 text-align:center;
 padding:40px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-z-index:999;
 }
 
 @media(max-width:768px){
@@ -213,33 +190,31 @@ margin-top:15px;
 }
 
 .hero h1{
-font-size:42px;
+font-size:45px;
+}
+
+.about{
+grid-template-columns:1fr;
 }
 
 }
 
 </style>
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">
-AURA<span>CRAFT</span> CREATIONS
-</div>
+<div class="logo">AURA<span>CRAFT</span></div>
 
 <nav>
-<a href="#home">Home</a>
+<a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#about">About</a>
-<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
-
 </header>
 
-<section class="hero" id="home">
+<section class="hero">
 
 <div>
 
@@ -247,12 +222,13 @@ AURA<span>CRAFT</span> CREATIONS
 
 <p>
 Discover custom-designed printed T-shirts, handmade candles,
-and beautiful resin art creations crafted with care and designed to stand out.
+resin art creations and personalized gifts crafted with care.
+Every product is uniquely designed to make your moments special.
 </p>
 
-<a href="https://www.meesho.com/AuraCraftCreations?ms=2"
-target="_blank"
-class="btn">
+<a class="btn"
+href="https://www.meesho.com/AuraCraftCreations?ms=2"
+target="_blank">
 Shop On Meesho
 </a>
 
@@ -267,21 +243,21 @@ Shop On Meesho
 <div class="cards">
 
 <div class="card">
-<img src="images/WhatsApp Image 2026-06-28 at 10.20.00 AM.jpeg">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900">
 <h3>Custom Printed T-Shirts</h3>
-<p>Unique personalized designs for every style.</p>
+<p>Creative, personalized and stylish custom printed apparel.</p>
 </div>
 
 <div class="card">
-<img src="images/WhatsApp Image 2026-06-28 at 10.21.53 AM.jpeg">
+<img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=900">
 <h3>Handmade Candles</h3>
-<p>Beautiful handcrafted candles made with love.</p>
+<p>Beautiful handcrafted candles made with love and creativity.</p>
 </div>
 
 <div class="card">
-<img src="images/WhatsApp Image 2026-06-28 at 10.25.16 AM.jpeg">
-<h3>Resin Art Creations</h3>
-<p>Elegant resin artwork perfect for gifts and décor.</p>
+<img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=900">
+<h3>Resin Art</h3>
+<p>Unique resin artwork perfect for gifts and home décor.</p>
 </div>
 
 </div>
@@ -290,20 +266,23 @@ Shop On Meesho
 
 <section id="about">
 
-<h2 class="title">About AuraCraft Creations</h2>
-
 <div class="about">
 
-AuraCraft Creations brings creativity and craftsmanship together.
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900">
 
-We specialize in custom printed T-shirts, handmade candles,
-and unique resin art pieces.
+<div>
 
-Every creation is handmade with love, crafted with care,
-and designed to stand out.
+<h2>About AuraCraft Creations</h2>
 
-Our mission is to provide premium handmade products at
-pocket-friendly prices while ensuring every customer receives something truly special.
+<p>
+AuraCraft Creations is a handmade brand dedicated to creating unique products with passion and creativity.
+
+We specialize in custom T-shirts, candles, resin art, personalized gifts and handcrafted decorative products.
+
+Every product is handmade with love, crafted with care and designed to stand out.
+</p>
+
+</div>
 
 </div>
 
@@ -316,43 +295,24 @@ pocket-friendly prices while ensuring every customer receives something truly sp
 <div class="features">
 
 <div class="feature">
-<h3>Handmade With Love</h3>
-<p>Every product is carefully handcrafted.</p>
+<h3>Handmade Products</h3>
+<p>Every item is made with care and attention.</p>
 </div>
 
 <div class="feature">
 <h3>Unique Designs</h3>
-<p>Creative products designed to stand out.</p>
+<p>Creative products designed specially for you.</p>
 </div>
 
 <div class="feature">
-<h3>Affordable Pricing</h3>
-<p>Premium handmade products at budget-friendly prices.</p>
+<h3>Affordable Prices</h3>
+<p>Premium handmade products at pocket-friendly prices.</p>
 </div>
 
 <div class="feature">
-<h3>Trusted Shopping</h3>
-<p>Secure shopping through our official Meesho store.</p>
+<h3>Trusted Store</h3>
+<p>Shop securely through our official Meesho store.</p>
 </div>
-
-</div>
-
-</section>
-
-<section id="gallery">
-
-<h2 class="title">Product Gallery</h2>
-
-<div class="cards">
-
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.20.00 AM (1).jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.20.01 AM.jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.21.56 AM.jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.22.01 AM.jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.25.17 AM.jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.25.30 AM.jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.25.33 AM.jpeg"></div>
-<div class="card"><img src="images/WhatsApp Image 2026-06-28 at 10.29.39 AM.jpeg"></div>
 
 </div>
 
@@ -360,24 +320,18 @@ pocket-friendly prices while ensuring every customer receives something truly sp
 
 <section id="contact">
 
+<div class="contact">
+
 <h2 class="title">Contact Us</h2>
 
-<div class="contact-box">
+<h3>📞 Phone: 8334841488</h3>
 
-<h3>AuraCraft Creations</h3>
+<h3>🛒 Meesho Store</h3>
 
-<p>📞 +91 8334841488</p>
-
-<p>📧 ownherworld@gmail.com</p>
-
-<p>🛍️ Shop our complete collection on Meesho</p>
-
-<br>
-
-<a href="https://www.meesho.com/AuraCraftCreations?ms=2"
-target="_blank"
-class="btn">
-Visit Meesho Store
+<a class="btn"
+href="https://www.meesho.com/AuraCraftCreations?ms=2"
+target="_blank">
+Visit Store
 </a>
 
 </div>
@@ -395,12 +349,6 @@ Visit Meesho Store
 <p>© 2026 AuraCraft Creations. All Rights Reserved.</p>
 
 </footer>
-
-<a class="whatsapp"
-href="https://wa.me/918334841488"
-target="_blank">
-💬
-</a>
 
 </body>
 </html>
